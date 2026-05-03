@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.python-version
+
+# Python env
+venv/
+.venv/
+
+# Node
+node_modules/
+
+# Local secrets
+.env
+
+# Reports / artifacts
+reports/
+*.log
+
+# Docs (keep local by default)
+*.docx
+
+# Vendor repo (use npm deps instead)
+UI-TARS-desktop/
+
+# IDE
+.vscode/
+.idea/

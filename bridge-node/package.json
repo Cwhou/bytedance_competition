@@ -1,0 +1,13 @@
+{
+  "name": "cua-lark-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "@ui-tars/operator-nut-js": "latest",
+    "@ui-tars/sdk": "latest",
+    "dotenv": "latest",
+    "uuid": "latest"
+  }
+}
+
