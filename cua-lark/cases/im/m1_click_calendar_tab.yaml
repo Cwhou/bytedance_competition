@@ -1,0 +1,11 @@
+id: m1_click_calendar_tab
+product: im
+preconditions: []
+steps:
+  - action: instruct
+    value: 在飞书主窗口左侧导航栏，点击「日历」或「Calendar」入口。
+    timeout_s: 90
+    maxLoopCount: 15
+asserts:
+  - kind: vlm
+    query: 截图主区域是否呈现日历/日程视图特征（例如月视图、周视图或日程列表）？

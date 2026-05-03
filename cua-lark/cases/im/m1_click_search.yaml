@@ -1,0 +1,11 @@
+id: m1_click_search
+product: im
+preconditions: []
+steps:
+  - action: instruct
+    value: 在飞书主窗口顶部，点击全局搜索框或搜索图标，使搜索输入框出现光标或可输入状态。
+    timeout_s: 90
+    maxLoopCount: 15
+asserts:
+  - kind: vlm
+    query: 截图中是否出现明显的搜索输入框或搜索浮层（可输入关键词）？

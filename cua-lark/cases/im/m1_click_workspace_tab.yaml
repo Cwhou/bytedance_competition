@@ -1,0 +1,11 @@
+id: m1_click_workspace_tab
+product: im
+preconditions: []
+steps:
+  - action: instruct
+    value: 在飞书主窗口左侧导航栏，点击「工作台」或类似「应用 / Apps」聚合入口（若界面为英文则点击 Workspace 或 Apps）。
+    timeout_s: 90
+    maxLoopCount: 15
+asserts:
+  - kind: vlm
+    query: 截图主区域是否展示多个应用图标或工作台卡片（而非纯聊天列表）？

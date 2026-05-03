@@ -1,0 +1,2 @@
+[console_scripts]
+cua-lark = cua_lark.cli:app

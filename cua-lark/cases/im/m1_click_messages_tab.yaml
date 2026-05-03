@@ -1,0 +1,11 @@
+id: m1_click_messages_tab
+product: im
+preconditions: []
+steps:
+  - action: instruct
+    value: 在当前已打开的飞书主窗口中，点击左侧导航栏中的「消息」或「Messages」图标，使消息列表区域获得焦点。
+    timeout_s: 90
+    maxLoopCount: 15
+asserts:
+  - kind: vlm
+    query: 截图中左侧「消息」或「Messages」项是否呈现为选中/高亮状态，且主区域为会话列表而非通讯录？

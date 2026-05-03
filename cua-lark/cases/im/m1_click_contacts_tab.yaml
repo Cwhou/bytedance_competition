@@ -1,0 +1,11 @@
+id: m1_click_contacts_tab
+product: im
+preconditions: []
+steps:
+  - action: instruct
+    value: 在当前飞书主窗口，点击左侧导航栏中的「通讯录」或「Contacts」入口。
+    timeout_s: 90
+    maxLoopCount: 15
+asserts:
+  - kind: vlm
+    query: 截图主内容区是否更像通讯录/联系人列表（而非聊天消息列表）？
